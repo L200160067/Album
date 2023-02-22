@@ -20,8 +20,16 @@
     @include('layouts.header')
 
 <main>
+  {{-- <section>
+    <div class="row justify-content-start">
+      <div class="col-md-4 col-lg-2">
+        <button class="btn btn-primary  btn-block">Sign up</button>
+      </div><!-- /col -->
+    </div><!-- /row -->
+  </section> --}}
 
   <section class="py-5 text-center container">
+  
     @include('layouts.hero')
   </section>
 

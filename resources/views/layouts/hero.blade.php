@@ -9,24 +9,54 @@
     </div>
   </div> --}}
 
-<div class="d-flex justify-content-center">
-  <div class="card bg-dark text-white " style="max-width: 600px;">
-    <img src="https://mdbcdn.b-cdn.net/img/new/slides/017.webp" class="card-img" alt="Stony Beach"/>
-    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
+<div class="">
+  <div class="card bg-dark text-white ">
+    <img src="https://mdbcdn.b-cdn.net/img/new/slides/017.webp" class="card-img" alt="Stony Beach" style="min-height: 400px;object-fit: cover"/>
+    <div class="card-img-overlay w-100 d-flex justify-content-center align-items-center flex-column" style="background-color: rgba(0, 0, 0, 0.3);">
       <h1 class="fw-light">Album example</h1>
       <p class="lead card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional
-        content. This content is a little bit longer.
+        {{-- This is a wider card with supporting text below as a natural lead-in to additional
+        content. This content is a little bit longer. --}}
       </p>
       <p class="card-text">Last updated 3 mins ago</p>
       <p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        <a href="#" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New Picture</a>
+        {{-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> --}}
       </p>
     </div>
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-3 just">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+          <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   {{-- @if ($posts->count())
 <div class="card mb-3">
 
