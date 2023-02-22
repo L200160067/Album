@@ -15,12 +15,12 @@
     <div class="card-img-overlay w-100 d-flex justify-content-center align-items-center flex-column" style="background-color: rgba(0, 0, 0, 0.3);">
       <h1 class="fw-light">Album example</h1>
       <p class="lead card-text">
-        {{-- This is a wider card with supporting text below as a natural lead-in to additional
-        content. This content is a little bit longer. --}}
+        This is a wider card with supporting text below as a natural lead-in to additional
+        content. This content is a little bit longer.
       </p>
       <p class="card-text">Last updated 3 mins ago</p>
       <p>
-        <a href="#" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New Picture</a>
+        
         {{-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> --}}
       </p>
     </div>
